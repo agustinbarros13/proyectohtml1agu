@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'" />
+    <meta name="description" content="esta es una web de pruba" />
+    <meta name="keywords" content="etiquetas html, estructura, semántica" />
+    <meta name="author" content="Agustin Barros" />
+    <meta name="robots" content="index, follow" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="canonical" />
+    <link rel="icon" type="image/x-icon" href="img/icons8-casa-64 (1).png" />
+    <title>Práctica</title>
+  </head>
+  <body>
+    <header>
+      <h1>
+        Práctica web
+        <img src="./img/icons8-casa-64 (1).png" alt="logo de la web" />
+      </h1>
+      <nav>
+        <ul>
+          <li>
+            <a href="./index.html" target="_self">Inicio</a>
+          </li>
+          <li>
+            <a href="./nosotros.html" target="_self">Nosotros</a>
+          </li>
+          <li>
+            <a href="./categorias.html" target="_self">Categorías</a>
+          </li>
+          <li>
+            <a href="./contacto.html" target="_self">Contactos</a>
+          </li>
+        </ul>
+        <!-- Formulario para la barra de búsquda -->
+        <form action="/buscar" method="get">
+          <input type="text" name="buscar" placeholder="Buscar..." />
+          <button type="submit">Buscar</button>
+        </form>
+        <!-- Formulario para registrarse-->
+        <h2>Registrarse</h2>
+        <form action="//" method="post">
+          <label for="username">Usuario:</label>
+          <input type="text" id="username" name="username" required />
+
+          <label for="password">Contraseña:</label>
+          <input type="password" id="password" name="password" required />
+          <button type="submit">Registrarse</button>
+        </form>
+        <!-- Formulario para inciar sesón-->
+        <h2>Iniciar Sesión</h2>
+        <form action="/login" method="post">
+          <label for="username">Usuario:</label>
+          <input type="text" id="username" name="username" required />
+
+          <label for="password">Contraseña:</label>
+          <input type="password" id="password" name="password" required />
+
+          <button type="submit">Iniciar Sesión</button>
+        </form>
+      </nav>
+    </header>
+    <main>
+      <!-- Puse divs a cada una de las imágenes para trabajarlas individualmente y tenerlas organizadas-->
+      <div id="imagen1">
+        <img
+          src="./img/salmon-img1.jpg"
+          alt="imagen de un plato de salmón"
+          title="plato de salmón"
+        />
+      </div>
+      <h3>Nuestro plato de salmón</h3>
+      <p>Nuestro plato de salmón cuenta con ....</p>
+      <div id="imagen2">
+        <img
+          src="./img/pizza-img2.jpg"
+          alt="imagen de una pizza"
+          title="plato de pizza"
+        />
+        <h3>Nuestras pizzas</h3>
+        <p>Nuestras pizzas cuentan con...</p>
+      </div>
+      <div id="imagen3">
+        <img
+          src="./img/hamburger-img3.jpg"
+          alt="imagen de una hamburguesa"
+          title="plato de hamburguesa"
+        />
+        <h3>Nuestro plato de hamburguesa</h3>
+        <p>Nuestro plato de hamburguesa cuenta con ....</p>
+      </div>
+      <div id="imagen4">
+        <img
+          src="./img/vegetables-img4.jpg"
+          alt="imagen de vegetales"
+          title="vegetales"
+        />
+        <h3>Nuestro plato de vegetales</h3>
+        <p>Nuestro plato de vegetales cuenta con ....</p>
+      </div>
+    </main>
+    <aside>
+      <video
+        src="./img/happy_new_year_-_3565 (360p) (1).mp4"
+        controls
+        loop
+        autoplay
+      >
+        Happy New Year
+      </video>
+      <h3>
+        Desde
+        <img src="./img/icons8-casa-64 (1).png" alt="logo de la empresa" /> les
+        deseamos feliz año nuevo.
+      </h3>
+    </aside>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-section">
+          <h3>Contacto</h3>
+          <p>Dirección: calle ....</p>
+          <p>Email: agustin_b_@outlook.es</p>
+          <p>Teléfono: +34 60....</p>
+        </div>
+        <div class="footer-section">
+          <h3>Suscríbete</h3>
+          <p>Recibe nuestras últimas actualizaciones en tu correo.</p>
+          <form action="/suscribir" method="post">
+            <input
+              type="email"
+              name="email"
+              placeholder="Tu correo electrónico"
+              required
+            />
+            <button type="submit">Suscribirse</button>
+          </form>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2023 Tu Empresa. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+  </body>
+</html>
